@@ -1,7 +1,93 @@
-/* default font */
+/* common styles to all properties */
 .font-inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+/* nav styles */
+nav {
+  background-color: #1A0B2E;
+  width: 100%;
+  display: flex;
+  padding: 20px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+nav .logo .wave {
+  font-size: 2rem;
+  /* color: #ffffff; */
+  font-weight: 800;
+  background: linear-gradient(to right, #ff00cc 42%, #ffab2e 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav .logo .wave:hover {
+  background: linear-gradient(to left, #ff00cc 42%, #ffab2e 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* nav li {
+  gap: ;
+} */
+nav li a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+}
+
+nav button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+nav button {
+  background: linear-gradient(90deg, #ffbd3f 0%, #ff00cc 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav button:hover {
+  background: linear-gradient(90deg, #ff00cc 0%, #ffbd3f 100%);
+}
+
+/* banner styles */
