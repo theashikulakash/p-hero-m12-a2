@@ -93,6 +93,10 @@ nav button:hover {
   background: linear-gradient(90deg, #ff00cc 0%, #ffbd3f 100%);
 }
 
+nav .hamburger {
+  display: none;
+}
+
 /* banner styles */
 .banner {
   background-image: url('./assets/hero-bg.png');
@@ -110,6 +114,16 @@ nav button:hover {
   text-align: center;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .banner .image {
   position: relative;
   width: 350px;
@@ -118,6 +132,7 @@ nav button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* animation: spin 10s linear infinite; */
 }
 
 .banner .image img:nth-child(1) {
@@ -128,6 +143,7 @@ nav button:hover {
   height: 100%;
   object-fit: contain;
   z-index: 1;
+  animation: spin 4s linear infinite;
 }
 
 .banner .image img:nth-child(2) {
@@ -161,7 +177,14 @@ nav button:hover {
   color: #ffffff;
 }
 
-.ban-content button {
+.ban-content .ban-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ban-content .ban-btn button {
   padding: 12px 25px;
   border-radius: 50px;
   font-weight: 600;
@@ -351,8 +374,25 @@ nav button:hover {
 }
 
 /* responsive styles max-width: 992px*/
+@media screen and (max-width: 992px) {
 
-@media (max-width: 992px) {
+  /* nav responsive */
+  nav {
+    padding: 15px 30px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  /* about responsive */
+  .about-stat {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* why responsive */
+
   .why-box {
     grid-template-columns: 1fr 1fr;
   }
@@ -377,4 +417,50 @@ nav button:hover {
   .why-card:nth-child(5) {
     grid-column: span 2;
   }
+}
+
+/* mobile responsive (max-width: 576px) */
+@media screen and (max-width: 576px) {
+
+  /* nav responsive */
+  nav {
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul,
+  nav button {
+    display: none;
+  }
+
+  nav .hamburger {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+
+
+  /* banner responsive */
+
+  .ban-content p {
+    padding: 0 30px;
+    margin-bottom: 25px;
+  }
+
+  .ban-content button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 0.85rem;
+    width: auto;
+  }
+
+  /* about responsive */
+
+  .about-stat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
