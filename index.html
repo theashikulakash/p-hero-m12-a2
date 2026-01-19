@@ -9,6 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>TechWave</title>
 </head>
@@ -21,7 +24,7 @@
             <li><a href="">Episodes</a></li>
             <li><a href="">Host</a></li>
         </ul>
-        <button><a href="">Subscribe</a><i></i></button>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
         <img class="hamburger" src="./assets/hamburger-menu.png" alt="">
     </nav>
     <div class="banner">
@@ -34,8 +37,8 @@
             <h1>TechWave</h1>
             <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
             <div class="ban-btn">
-            <button><img src="./assets/spotify.png" alt="">Listen on Spotify</button>
-            <button><img src="./assets/message.png" alt="">Subscribe</button>
+                <button><img src="./assets/spotify.png" alt="">Listen on Spotify</button>
+                <button><img src="./assets/message.png" alt="">Subscribe</button>
             </div>
         </div>
     </div>
@@ -105,60 +108,77 @@
         </div>
     </div>
     <div class="featured">
+        <h2 class="f-section-title">Featured Episodes</h2>
         <div class="featured-card">
-            <iframe src="" frameborder="0"></iframe>
-            <h3>The Future of AI in Everyday Life</h3>
-            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the
-                next decade.</p>
-            <div class="div">
-                <img src="" alt="">
-                <span></span>
+            <div class="card">
+                <iframe src="https://www.youtube.com/embed/PW1tbcBW5kg" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="f-content">
+                    <h3>If i were a politician</h3>
+                    <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in
+                        the
+                        next decade.</p>
+                    <div class="duration">
+                        <img src="./assets/clock.png" alt="">
+                        <span>3:51 min</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="featured-card">
-            <iframe src="" frameborder="0"></iframe>
-            <h3>Building Better Habits for Remote Work</h3>
-            <p>Practical strategies for staying productive and maintaining work-life balance in a remote
-                environment.</p>
-            <div class="div">
-                <img src="" alt="">
-                <span></span>
+            <div class="card">
+                <iframe src="https://www.youtube.com/embed/gvwNVgcivPk" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>What a Show! with Rafsan Sabab, Salman, Dipty</h3>
+                <p>Practical strategies for staying productive and maintaining work-life balance in a remote
+                    environment.</p>
+                <div class="duration">
+                    <img src="./assets/clock.png" alt="">
+                    <span>1:09:47 min</span>
+                </div>
             </div>
-        </div>
-        <div class="featured-card">
-            <iframe src="" frameborder="0"></iframe>
-            <h3>Career Growth in Tech: A Roadmap</h3>
-            <p>Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
-            <div class="div">
-                <img src="" alt="">
-                <span></span>
+            <div class="card">
+                <iframe src="https://www.youtube.com/embed/GGfrFHPvam0" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>SCANeDalous with Salman Muqtadir & Faham</h3>
+                <p>Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+                <div class="duration">
+                    <img src="./assets/clock.png" alt="">
+                    <span>1:18:05 min</span>
+                </div>
             </div>
         </div>
     </div>
     <div class="meet">
         <h2 class="section-title">Meet The Host</h2>
         <div class="meet-card">
-            <img src="" alt="">
-            <h3>Alex Kumar</h3>
-            <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for
-                over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares
-                insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-            <div class="meet-social">
-                <button><img src="./assets/linkedin.png" alt=""></button>
-                <button><img src="./assets/x.png" alt=""></button>
-                <button><img src="./assets/instagram.png" alt=""></button>
-                <button><img src="./assets/youtube.png" alt=""></button>
+            <img src="./assets/host.png" alt="">
+            <div class="host-content">
+                <h3>Alex Kumar</h3>
+                <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for
+                    over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares
+                    insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                <div class="meet-social">
+                    <button><img src="./assets/linkedin.png" alt=""></button>
+                    <button><img src="./assets/x.png" alt=""></button>
+                    <button><img src="./assets/instagram.png" alt=""></button>
+                    <button><img src="./assets/youtube.png" alt=""></button>
+                </div>
             </div>
         </div>
     </div>
     <footer>
-        <span class="logo">TechWave</span>
+        <p class="logo">Tech<span class="wave">Wave</span></p>
         <div class="footer-social">
             <button><a href=""><img src="./assets/spotify.png" alt="">Spotify</a></button>
             <button><a href=""><img src="./assets/apple-podcast.png" alt="">Apple Podcasts</a></button>
             <button><a href=""><img src="./assets/youtube-podcast.png" alt="">YouTube</a></button>
             <button><a href=""><img src="./assets/twitter.png" alt="">Twitter</a></button>
         </div>
+
+        <hr class="line-separator"> 
+        <!-- there is no line separator in figma design but in main requirments there have mentioned to add horizontal line separetor. -->
         <p>© 2026 TechWave Podcast. All rights reserved.</p>
     </footer>
 </body>
